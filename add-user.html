@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>TNSFtp create user</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./site/static/css/bootstrap.min.css">
@@ -11,20 +11,25 @@
 <body>
 
 <div class="container">
-  <h2>Vertical (basic) form</h2>
+  <h2>TNSFtp</h2>
   <form action="/action_page.php">
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      <label for="server">Server:</label>
+      <input type="text" class="form-control" id="server" placeholder="s-c3bdba23f0b04b60a" name="server">
+    </div>
+    <div class="form-group">
+      <label for="user">User</label>
+      <input type="text" class="form-control" id="user" name="user">
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
+      <input type="password" class="form-control" id="pwd" name="pwd">
+    </div>	
+    <div class="form-group">
+      <label for="key">Publickey:</label>
+      <input type="text" class="form-control" id="key" name="key">
+    </div>		
+    <button type="submit" class="btn btn-default">Create user</button>
   </form>
 </div>
 
