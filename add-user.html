@@ -9,10 +9,16 @@
   <script src="./site/static/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<script>
+$(document).ready(function(){
+  $("#mybutton").click(function(){
+    alert("User created..");
+  });
+});
+</script>
 <div class="container">
   <h2>TNSFtp</h2>
-  <form action="/action_page.php">
+  <form id="create" >
     <div class="form-group">
       <label for="server">Server:</label>
       <input type="text" class="form-control" id="server" placeholder="s-c3bdba23f0b04b60a" name="server">
@@ -29,7 +35,7 @@
       <label for="key">Publickey:</label>
       <input type="text" class="form-control" id="key" name="key">
     </div>		
-    <button type="submit" class="btn btn-default">Create user</button>
+	<button type="button" id="mybutton" class="btn btn-default">Create User</button>
   </form>
 </div>
 
